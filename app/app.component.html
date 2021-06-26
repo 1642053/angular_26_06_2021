@@ -1,0 +1,25 @@
+<div class="container">
+  <!-- header -->
+  <app-header></app-header>
+  <!-- end header -->
+
+  <!-- menu -->
+  <app-menu></app-menu>
+  <!-- end menu -->
+
+  <div id="main">
+    <div class="left">
+      <!-- sidebar -->
+      <app-sidebar></app-sidebar>
+      <!-- end sidebar -->
+    </div>
+    <div class="right">
+      <!-- nội dung cần thay đổi -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <app-footer></app-footer>
+  <!-- end footer -->
+</div>
