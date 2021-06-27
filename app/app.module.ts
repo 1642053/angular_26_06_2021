@@ -12,6 +12,11 @@ import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { Page404Component } from './page404/page404.component';
+import { LoginComponent } from './login/login.component';
+
+// Gọi thư viện để sử dụng api
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,11 +29,15 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     CategoryComponent,
     ProductComponent,
     ContactComponent,
-    SidebarComponent
+    SidebarComponent,
+    Page404Component,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // import HttpClientModule after BrowserModule.
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
